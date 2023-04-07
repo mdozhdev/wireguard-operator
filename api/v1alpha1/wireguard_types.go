@@ -46,6 +46,7 @@ type WireguardSpec struct {
 	ServiceType              corev1.ServiceType `json:"serviceType,omitempty"`
 	ServiceAnnotations       map[string]string  `json:"serviceAnnotations,omitempty"`
 	EnableIpForwardOnPodInit bool               `json:"enableIpForwardOnPodInit,omitempty"`
+	LoadBalancerIP           string             `json:"loadBalancerIP,omitempty"`
 }
 
 // WireguardStatus defines the observed state of Wireguard

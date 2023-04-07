@@ -591,7 +591,8 @@ func (r *WireguardReconciler) serviceForWireguard(m *vpnv1alpha1.Wireguard, serv
 				Port:       port,
 				TargetPort: intstr.FromInt(port),
 			}},
-			Type: serviceType,
+			Type:           serviceType,
+			LoadBalancerIP: m.Spec.LoadBalancerIP,
 		},
 	}
 
