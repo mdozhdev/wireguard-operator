@@ -581,6 +581,7 @@ func (r *WireguardReconciler) serviceForWireguard(m *vpnv1alpha1.Wireguard, serv
 		ObjectMeta: metav1.ObjectMeta{
 			Name:        m.Name + "-svc",
 			Namespace:   m.Namespace,
+			Labels:      labels,
 			Annotations: m.Spec.ServiceAnnotations,
 		},
 		Spec: corev1.ServiceSpec{
