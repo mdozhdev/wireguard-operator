@@ -7,7 +7,7 @@ name: Create and publish Wireguard operator
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, wireguard-service-annotations ]
   pull_request:
     branches: [ main ]
 
