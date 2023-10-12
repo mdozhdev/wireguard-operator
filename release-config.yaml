@@ -1,2 +1,2 @@
-WIREGUARD_IMAGE: "ghcr.io/mdozhdev/wireguard-operator/wireguard:latest
-OPERATOR_IMAGE: "ghcr.io/mdozhdev/wireguard-operator/operator:latest
+WIREGUARD_IMAGE: "ghcr.io/mdozhdev/wireguard-operator/wireguard:latest"
+OPERATOR_IMAGE: "ghcr.io/mdozhdev/wireguard-operator/operator:latest"
